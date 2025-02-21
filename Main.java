@@ -23,6 +23,16 @@ public class Main
 
   public static void printStatistics(final ArrayList<Integer> arr)
   {
-    
+    double sum = 0;
+    int count = 0;
+    int mode = arr.get(0);
+
+    for (Integer num : arr)
+    {
+      sum += num;
+    }
+    System.out.println("Sum: " + sum);
+    System.out.println("Average: " + sum/arr.length);
+
   }
 }
